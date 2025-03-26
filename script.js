@@ -70,7 +70,7 @@ function setupWebGLEdgeDetection(video, canvas) {
 		}
 
 		float edgeStrength = length(sobelX + sobelY);
-		float edge = edgeStrength > 0.3 ? 1.0 : 0.0; // Edge threshold
+		float edge = edgeStrength > 0.4 ? 1.0 : 0.0; // Edge threshold
 
 		gl_FragColor = vec4(vec3(edge), 1.0);
 	}
